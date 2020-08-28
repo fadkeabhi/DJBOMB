@@ -237,13 +237,7 @@ def clr():
     else:
         os.system('clear')
 
-def pl(no):
-    url = 'https://www.djabrj.ml/pl/check.php'
-    myobj = {'no': no}
-    x = requests.post(url, data = myobj)
-    if x.text == "true" :
-     print("NO IS PROTECTED")
-     exit()
+
         
 def banner():
     
