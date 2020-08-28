@@ -237,7 +237,8 @@ def clr():
     else:
         os.system('clear')
 
-
+def pl():
+ print('')
         
 def banner():
     
