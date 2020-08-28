@@ -237,8 +237,7 @@ def clr():
     else:
         os.system('clear')
 
-def pl():
- print('')
+
         
 def banner():
     
@@ -511,7 +510,7 @@ while True:
         cc = cc.strip()
     pn = input("\tEnter Target Number: +" + cc + " ")
     pn = remsp(pn)
-    pl(pn)
+    
     
     
     
