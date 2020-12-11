@@ -58,9 +58,15 @@ pkg install git -y
 pkg install python -y 
 git clone https://github.com/fadkeabhi/DJBOMB.git
 cd DJBOMB
+chmod +x DJBOMB.sh
 ./DJBOMB.sh
 ```
 
+use 
+```
+bash DJBOMB.sh
+```
+if ./DJBOMB.sh don't works.
 ### For iSH
 
 To use the application, type in the following commands in iSH.
