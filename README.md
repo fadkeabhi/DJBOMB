@@ -14,7 +14,7 @@
 - The application requires active internet connection to contact the APIs
 - You would not be charged for any SMS/calls dispatched as a consequence of this script
 - For best performance, use single thread with considerable delay time
-- Always ensure that you are using the latest version of TBomb and have Python 3
+- Always ensure that you are using the latest version of DJBOMB and have Python 3
 - This application must not be used to cause harm/discomfort/trouble to others
 - By using this, you agree that you cannot hold the contributors responsible for any misuse
 
@@ -46,9 +46,9 @@ or any version greater than or equal to 3.4, this script has been tested and con
 
 Git installation methods are not universal and are likely to differ between distributions so installing Git as per the given instructions below may not work. Please check out how to install Git for your Linux distribution [here](https://git-scm.com/). Commands below provide instructions for Debian-based systems.
 
->Ruuning `TBomb.sh` as sudo miscofigures files ownership. It is recommended not to run it as sudo
+>Ruuning `DJBOMB.sh` as sudo miscofigures files ownership. It is recommended not to run it as sudo
 
-Run these commands to clone and run TBomb.
+Run these commands to clone and run DJBOMB.
 
 ### For Termux
 
@@ -57,8 +57,8 @@ To use the bomber type the following commands in Termux:
 pkg install git -y 
 pkg install python -y 
 git clone https://github.com/fadkeabhi/DJBOMB.git
-cd TBomb
-./TBomb.sh
+cd DJBOMB
+./DJBOMB.sh
 ```
 
 ### For iSH
@@ -69,10 +69,10 @@ apk add git
 apk add python3
 apk add py3-pip
 git clone https://github.com/fadkeabhi/DJBOMB.git
-cd TBomb
+cd DJBOMB
 pip3 install -r requirements.txt
-chmod +x TBomb.sh
-./TBomb.sh
+chmod +x DJBOMB.sh
+./DJBOMB.sh
 ```
 
 ### For Debian-based GNU/Linux distributions
@@ -81,8 +81,8 @@ To use the application, type in the following commands in GNU/Linux terminal.
 ```shell script
 sudo apt install git
 git clone https://github.com/fadkeabhi/DJBOMB.git
-cd TBomb
-bash TBomb.sh
+cd DJBOMB
+bash DJBOMB.sh
 ```
 
 ### For MacOS
@@ -103,18 +103,18 @@ brew install python3
 sudo easy_install pip
 sudo pip install --upgrade pip
 git clone https://github.com/fadkeabhi/DJBOMB.git
-cd TBomb
+cd DJBOMB
 ```
 
-#### Run TBomb
+#### Run DJBOMB
 
 ```shell script
-bash TBomb.sh
+bash DJBOMB.sh
 ```
 
 #### Missing Tools on MacOS & iSH App
 
-The package `toilet` cannot be installed yet. But TBomb does still work.
+The package `toilet` cannot be installed yet. But DJBOMB does still work.
 
 ## Demonstrative Video:
 

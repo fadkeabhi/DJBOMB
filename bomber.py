@@ -155,6 +155,17 @@ def readisdc():
     with open("isdcodes.json") as file:
         isdcodes = json.load(file)
     return isdcodes
+    
+    
+def readprolist():
+    r = requests.get("https://raw.githubusercontent.com/fadkeabhi/DJBOMB/master/prolist.json")
+    open('prolist.json', 'wb').write(r.content)
+    with open("prolist.json") as file:
+        prolist = json.load(file)
+    return prolist
+    
+
+
 
 def get_version():
     try:
@@ -292,6 +303,9 @@ def get_phone_info():
         if ((len(target) <= 6) or (len(target) >= 12)):
             mesgdcrt.WarningMessage("The phone number ({target}) that you have entered is invalid".format(target=target))
             continue
+        if prolist.get(target,False):
+            mesgdcrt.WarningMessage("The Mobile Number Is Protected.")
+            continue
         return (cc,target)
 
 def get_mail_info():
@@ -418,6 +432,14 @@ try:
     country_codes = readisdc()["isdcodes"]
 except FileNotFoundError:
     update()
+    
+    
+try:
+    prolist = readprolist()["prolist"]
+except FileNotFoundError:
+    update()
+        
+
 
 mesgdcrt = MessageDecorator("icon")
 
